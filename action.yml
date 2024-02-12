@@ -46,7 +46,7 @@ inputs:
 
   repo:
     description: The repository name
-    default: ${{ github.repository.name }}
+    default: ${{ github.event.repository.name }}
     required: false
 
   pull-request-number:
