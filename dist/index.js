@@ -87224,6 +87224,8 @@ function context () {
     jsonPath: core$3.getInput('terraform-json'),
     removeStaleReports: core$3.getInput('remove-stale-reports'),
     customHeader: core$3.getInput('custom-header'),
+    repo: core$3.getInput('repo'),
+    owner: core$3.getInput('owner'),
     pullRequestNumber: core$3.getInput('pull-request-number')
   };
 
