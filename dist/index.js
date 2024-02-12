@@ -104914,13 +104914,9 @@ async function post ({
 async function stale (data) {
   const octokit = github$1.getOctokit(data.token);
   const {
-    repo,
-    payload: {
-      pull_request: {
-        number: issue_number
-      }
-    }
+    repo
   } = github$1.context;
+  const issue_number = data.pullRequestNumber;
 
   // get issue comments
   const {
