@@ -87228,7 +87228,7 @@ function context () {
   };
 
   // exit early
-  if (!inputs.textPath || !inputs.jsonPath || !inputs.token || !pullRequestNumber) {
+  if (!inputs.textPath || !inputs.jsonPath || !inputs.token || !inputs.pullRequestNumber) {
     core$3.error('Missing required inputs');
     process.exit(1);
   }
