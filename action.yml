@@ -39,7 +39,7 @@ inputs:
     default: ':robot: Terraform Report'
     required: false
 
-  pull_request_number:
+  pull-request-number:
     description: The pull requests number
     default: ${{ github.event.pull_request.number }}
     required: false
