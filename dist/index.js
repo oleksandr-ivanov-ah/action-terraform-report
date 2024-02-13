@@ -104941,7 +104941,8 @@ async function stale (data) {
   } of comments) {
     try {
       await octokit.rest.issues.deleteComment({
-        ...repo,
+        owner,
+        repo,
         issue_number,
         comment_id
       });
